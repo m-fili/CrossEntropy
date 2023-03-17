@@ -3,10 +3,6 @@ import numpy as np
 
 
 class MLP(torch.nn.Module):
-    """
-    Since this model is used for policy-based problems, the output activation function is soft-max
-    to estimate the probabilities corresponding to each action.
-    """
 
     def __init__(self, n_input, n_output, n_hidden=None, random_state=110):
 
